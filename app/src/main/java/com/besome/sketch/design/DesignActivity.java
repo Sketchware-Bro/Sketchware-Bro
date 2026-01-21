@@ -1283,6 +1283,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
             if (activity != null) {
                 activity.runOnUiThread(() -> {
                     activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                    btnRun.setEnabled(false);
                 });
             }
         }
@@ -1344,6 +1345,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
 
         private void updateRunButton(boolean isRunning) {
             var context = getActivity();
+            btnRun.setEnabled(true);
             btnRun.setBackgroundTintList(ColorStateList.valueOf(ThemeUtils.getColor(context, isRunning ? R.attr.colorErrorContainer : R.attr.colorPrimary)));
             btnRun.setIcon(ContextCompat.getDrawable(context, isRunning ? R.drawable.ic_mtrl_stop : R.drawable.ic_mtrl_run));
             btnRun.setIconTint(ColorStateList.valueOf(ThemeUtils.getColor(context, isRunning ? R.attr.colorOnErrorContainer : R.attr.colorSurfaceContainerLowest)));

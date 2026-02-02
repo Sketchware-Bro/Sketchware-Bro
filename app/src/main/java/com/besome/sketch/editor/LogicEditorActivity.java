@@ -127,6 +127,7 @@ import pro.sketchware.activities.editor.view.CodeViewerActivity;
 import pro.sketchware.activities.resourceseditor.ResourcesEditorActivity;
 import pro.sketchware.databinding.ImagePickerItemBinding;
 import pro.sketchware.databinding.SearchWithRecyclerViewBinding;
+import pro.sketchware.lib.base.BaseTextWatcher;
 import pro.sketchware.menu.ExtraMenuBean;
 import pro.sketchware.utility.FilePathUtil;
 import pro.sketchware.utility.SvgUtils;
@@ -700,8 +701,8 @@ public class LogicEditorActivity extends BaseAppCompatActivity implements View.O
 
     public void a(Rs rs, float f, float f2) {
         for (View next : rs.V) {
-            if ((next instanceof Ss) && next.getX() < f && next.getX() + next.getWidth() > f && next.getY() < f2 && next.getY() + next.getHeight() > f2) {
-                new ExtraMenuBean(this).defineMenuSelector((Ss) next);
+            if (next instanceof Ss menu && next.getX() < f && next.getX() + next.getWidth() > f && next.getY() < f2 && next.getY() + next.getHeight() > f2) {
+                new ExtraMenuBean(this).defineMenuSelector(menu);
                 return;
             }
         }
@@ -745,15 +746,7 @@ public class LogicEditorActivity extends BaseAppCompatActivity implements View.O
         binding.recyclerView.setAdapter(adapter);
 
 
-        binding.searchInput.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
+        binding.searchInput.addTextChangedListener(new BaseTextWatcher() {
             @Override
             public void afterTextChanged(Editable s) {
                 String query = s.toString().toLowerCase();

@@ -693,10 +693,6 @@ public class Lx {
                     fieldDeclaration += "\r\nprivate File file_" + typeInstanceName + ";";
                     break;
 
-                case "FirebaseCloudMessage":
-                    fieldDeclaration += "\r\nprivate OnCompleteListener " + typeInstanceName + "_onCompleteListener;";
-                    break;
-
                 case "PhoneAuthProvider.OnVerificationStateChangedCallbacks":
                     fieldDeclaration += "private PhoneAuthProvider.ForceResendingToken " + typeInstanceName + "_resendToken;";
                     break;

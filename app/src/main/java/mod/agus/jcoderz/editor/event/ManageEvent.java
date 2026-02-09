@@ -149,9 +149,6 @@ public class ManageEvent {
         if (gx.a("FirebasePhoneAuth")) {
             listeners.add("OnVerificationStateChangedListener");
         }
-        if (gx.a("FirebaseCloudMessage")) {
-            listeners.add("OnCompleteListenerFCM");
-        }
         EventsHandler.addListeners(gx, listeners);
     }
 
@@ -283,10 +280,6 @@ public class ManageEvent {
                 list.add("onDateChanged");
                 return;
 
-            case "OnCompleteListenerFCM":
-                list.add("onCompleteRegister");
-                return;
-
             case "PatternLockViewListener":
                 list.add("onPatternLockStarted");
                 list.add("onPatternLockProgress");
@@ -341,7 +334,6 @@ public class ManageEvent {
                     R.drawable.ic_mtrl_touch_long;
             case "onPrepared" -> R.drawable.ic_mtrl_vid_prepared;
             case "onTabAdded" -> R.drawable.ic_mtrl_post_added;
-            case "onCompleteRegister" -> R.drawable.ic_mtrl_user_register_complete;
             case "onUpdatePasswordComplete" -> R.drawable.ic_mtrl_password;
             case "onUserEarnedReward" -> R.drawable.ic_mtrl_payment;
             default -> EventsHandler.getIcon(str);
@@ -370,7 +362,6 @@ public class ManageEvent {
             case "onBannerAdClicked" -> "onAdClicked";
             case "onBannerAdLoaded" -> "onAdLoaded";
             case "onTabAdded" -> "Return Title";
-            case "onCompleteRegister" -> "onComplete";
             case "onBannerAdFailedToLoad", "onInterstitialAdFailedToLoad" -> "onAdFailedToLoad";
             case "onBannerAdClosed" -> "onAdClosed";
             case "onRewardAdLoaded" -> "onRewardedAdLoaded";
@@ -579,13 +570,6 @@ public class ManageEvent {
                         %s
                     }
                     """, eventLogic, "\"\"");
-            case "onCompleteRegister" -> "@Override\r\n" +
-                    "public void onComplete(Task<InstanceIdResult> task) {\r\n" +
-                    "final boolean _success = task.isSuccessful();\r\n" +
-                    "final String _token = task.getResult().getToken();\r\n" +
-                    "final String _errorMessage = task.getException() != null ? task.getException().getMessage() : \"\";\r\n" +
-                    eventLogic + "\r\n" +
-                    "}";
             case "onCodeSent" -> "@Override\r\n" +
                     "public void onCodeSent(String _verificationId, PhoneAuthProvider.ForceResendingToken _token) {\r\n" +
                     eventLogic + "\r\n" +
@@ -797,10 +781,6 @@ public class ManageEvent {
                     "_calendar.get(Calendar.DAY_OF_MONTH), new DatePicker.OnDateChangedListener() {\r\n" +
                     listenerLogic + "\r\n" +
                     "});";
-            case "OnCompleteListenerFCM" ->
-                    targetId + "_onCompleteListener = new OnCompleteListener<InstanceIdResult>() {\r\n" +
-                            listenerLogic + "\r\n" +
-                            "};";
             case "PatternLockViewListener" ->
                     targetId + ".addPatternLockListener(new PatternLockViewListener() {\r\n" +
                             listenerLogic + "\r\n" +
@@ -868,7 +848,6 @@ public class ManageEvent {
                  "onFragmentAdded" -> "%d.position";
             case "onLetterSelected" -> "%s.index";
             case "onPageSelected" -> "%m.listMap.data %d.position";
-            case "onCompleteRegister" -> "%b.success %s.token %s.errorMessage";
             case "onCodeSent" -> "%s.verificationId %m.FirebasePhoneAuth.token";
             case "onTimeChanged" -> "%d.hour %d.minute";
             case "onScrollChanged" -> "%d.scrollState";
@@ -910,9 +889,6 @@ public class ManageEvent {
             list.add("onVerificationCompleted");
             list.add("onVerificationFailed");
             list.add("onCodeSent");
-        }
-        if (gx.a("FirebaseCloudMessage")) {
-            list.add("onCompleteRegister");
         }
         if (gx.a("FirebaseGoogleLogin")) {
             list.add("onAccountPicker");
@@ -963,8 +939,6 @@ public class ManageEvent {
                     targetId + ": " + eventName + " %d.position";
             case "onLetterSelected" -> "When " + targetId + " " + eventName + " %s.index";
             case "onTabAdded" -> "CharSequence getPageTitle %d.position";
-            case "onCompleteRegister" ->
-                    "When " + targetId + " " + eventName + " %b.success %s.token %s.errorMessage";
             case "onCodeSent" ->
                     "When " + targetId + " " + eventName + " %s.verificationId %m.FirebasePhoneAuth.token";
             case "onTimeChanged" -> "When " + targetId + " " + eventName + " %d.hour %d.minute";

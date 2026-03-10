@@ -163,7 +163,7 @@ public class ViewProperty extends LinearLayout implements Kw {
                 viewEvent.setVisibility(GONE);
             } else if (selectedGroupId == 1) {
                 propertyLayout.setVisibility(VISIBLE);
-                viewPropertyItems.e(viewBean);
+                viewPropertyItems.setupAllPropertiesFromConfig(viewBean);
                 layoutPropertySeeAll.setVisibility(GONE);
             } else if (selectedGroupId == 2) {
                 propertyLayout.setVisibility(GONE);

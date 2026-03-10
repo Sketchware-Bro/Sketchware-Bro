@@ -148,7 +148,7 @@ public class PropertyActivity extends BaseAppCompatActivity implements Kw {
 
     @Override
     public void onBackPressed() {
-        propertyItems.i(viewBean);
+        propertyItems.updateBeanFromUI(viewBean);
         o();
     }
 
@@ -329,10 +329,10 @@ public class PropertyActivity extends BaseAppCompatActivity implements Kw {
                             layoutPosition = getLayoutPosition();
                             notifyItemChanged(layoutPosition);
                             switch (propertyGroups.get(layoutPosition)) {
-                                case 1 -> propertyItems.d(viewBean);
-                                case 2 -> propertyItems.g(viewBean);
-                                case 3 -> propertyItems.h(viewBean);
-                                case 4 -> propertyItems.f(viewBean);
+                                case 1 -> propertyItems.setupLayoutAndWeightProperties(viewBean);
+                                case 2 -> propertyItems.setupTextProperties(viewBean);
+                                case 3 -> propertyItems.setupVisualProperties(viewBean);
+                                case 4 -> propertyItems.setupSpecialWidgetProperties(viewBean);
                             }
                         }
                     }

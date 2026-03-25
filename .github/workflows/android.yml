@@ -19,7 +19,7 @@ on:
 jobs:
   notifyTelegram:
     name: Notify Telegram
-    runs-on: ${{ vars.IS_USING_HOSTED_RUNNERS == 'true' && 'self-hosted' || 'ubuntu-latest' }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -43,7 +43,7 @@ jobs:
 
   build:
     name: Build APKs
-    runs-on: ${{ vars.IS_USING_HOSTED_RUNNERS == 'true' && 'self-hosted' || 'ubuntu-latest' }}
+    runs-on: ubuntu-latest
     outputs:
       short_sha: ${{ steps.set_sha.outputs.short_sha }}
     steps:

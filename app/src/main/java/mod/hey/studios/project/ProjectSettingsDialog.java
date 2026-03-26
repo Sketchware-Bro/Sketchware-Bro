@@ -9,7 +9,7 @@ import android.view.View;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import pro.sketchware.databinding.DialogProjectSettingsBinding;
+import bro.sketchware.databinding.DialogProjectSettingsBinding;
 
 public class ProjectSettingsDialog {
 

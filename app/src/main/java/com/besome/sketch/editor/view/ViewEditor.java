@@ -62,10 +62,10 @@ import a.a.a.wq;
 import mod.agus.jcoderz.beans.ViewBeans;
 import mod.hey.studios.util.ProjectFile;
 import mod.jbk.util.LogUtil;
-import pro.sketchware.R;
-import pro.sketchware.utility.ThemeUtils;
-import pro.sketchware.widgets.IconCustomWidget;
-import pro.sketchware.widgets.WidgetsCreatorManager;
+import bro.sketchware.R;
+import bro.sketchware.utility.ThemeUtils;
+import bro.sketchware.widgets.IconCustomWidget;
+import bro.sketchware.widgets.WidgetsCreatorManager;
 
 @SuppressLint({"ClickableViewAccessibility", "SetTextI18n"})
 public class ViewEditor extends RelativeLayout implements View.OnClickListener, View.OnTouchListener {

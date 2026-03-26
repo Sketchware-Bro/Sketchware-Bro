@@ -22,8 +22,8 @@ import mod.hey.studios.util.CompileLogHelper;
 import mod.hey.studios.util.Helper;
 import mod.jbk.diagnostic.CompileErrorSaver;
 import mod.jbk.util.AddMarginOnApplyWindowInsetsListener;
-import pro.sketchware.databinding.CompileLogBinding;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.databinding.CompileLogBinding;
+import bro.sketchware.utility.SketchwareUtil;
 
 public class CompileLogActivity extends BaseAppCompatActivity {
 

@@ -19,10 +19,10 @@ import a.a.a.Ss;
 import io.github.rosemoe.sora.widget.component.EditorAutoCompletion;
 import mod.hey.studios.code.SrcCodeEditor;
 import mod.hey.studios.util.Helper;
-import pro.sketchware.R;
-import pro.sketchware.databinding.CodeEditorHsAsdBinding;
-import pro.sketchware.utility.EditorUtils;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.R;
+import bro.sketchware.databinding.CodeEditorHsAsdBinding;
+import bro.sketchware.utility.EditorUtils;
+import bro.sketchware.utility.SketchwareUtil;
 
 public class AsdDialog extends Dialog implements DialogInterface.OnDismissListener {
     private SharedPreferences pref;

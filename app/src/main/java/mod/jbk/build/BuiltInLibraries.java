@@ -15,7 +15,7 @@ import a.a.a.Jp;
 import a.a.a.KB;
 import a.a.a.ProjectBuilder;
 import a.a.a.oB;
-import pro.sketchware.SketchApplication;
+import bro.sketchware.SketchApplication;
 
 public class BuiltInLibraries {
     public static final File EXTRACTED_COMPILE_ASSETS_PATH = new File(SketchApplication.getContext().getFilesDir(), "libs");

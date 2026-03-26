@@ -15,9 +15,9 @@ import a.a.a.Uu;
 import a.a.a.bB;
 import a.a.a.gB;
 import mod.hey.studios.util.Helper;
-import pro.sketchware.R;
-import pro.sketchware.databinding.ManageLibraryAdmobAppIdBinding;
-import pro.sketchware.databinding.ManageLibrarySettingAdmobAppIdAddBinding;
+import bro.sketchware.R;
+import bro.sketchware.databinding.ManageLibraryAdmobAppIdBinding;
+import bro.sketchware.databinding.ManageLibrarySettingAdmobAppIdAddBinding;
 
 public class AddAppIdStepView extends LinearLayout implements Uu, View.OnClickListener {
     private ManageLibraryAdmobAppIdBinding binding;

@@ -35,15 +35,15 @@ import dev.pranav.filepicker.SelectionMode;
 import mod.bobur.VectorDrawableLoader;
 import mod.hey.studios.code.SrcCodeEditor;
 import mod.hey.studios.util.Helper;
-import pro.sketchware.R;
-import pro.sketchware.databinding.DialogCreateNewFileLayoutBinding;
-import pro.sketchware.databinding.DialogInputLayoutBinding;
-import pro.sketchware.databinding.ManageFileBinding;
-import pro.sketchware.databinding.ManageJavaItemHsBinding;
-import pro.sketchware.utility.FilePathUtil;
-import pro.sketchware.utility.FileResConfig;
-import pro.sketchware.utility.FileUtil;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.R;
+import bro.sketchware.databinding.DialogCreateNewFileLayoutBinding;
+import bro.sketchware.databinding.DialogInputLayoutBinding;
+import bro.sketchware.databinding.ManageFileBinding;
+import bro.sketchware.databinding.ManageJavaItemHsBinding;
+import bro.sketchware.utility.FilePathUtil;
+import bro.sketchware.utility.FileResConfig;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.SketchwareUtil;
 
 @SuppressLint("SetTextI18n")
 public class ManageResourceActivity extends BaseAppCompatActivity {

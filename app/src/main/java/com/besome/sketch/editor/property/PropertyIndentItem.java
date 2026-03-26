@@ -16,9 +16,9 @@ import a.a.a.Kw;
 import a.a.a.mB;
 import a.a.a.wB;
 import mod.hey.studios.util.Helper;
-import pro.sketchware.R;
-import pro.sketchware.databinding.PropertyPopupInputIndentBinding;
-import pro.sketchware.lib.validator.MinMaxInputValidator;
+import bro.sketchware.R;
+import bro.sketchware.databinding.PropertyPopupInputIndentBinding;
+import bro.sketchware.lib.validator.MinMaxInputValidator;
 
 @SuppressLint("ViewConstructor")
 public class PropertyIndentItem extends RelativeLayout implements View.OnClickListener {

@@ -1,6 +1,6 @@
 package mod.hilal.saif.activities.tools;
 
-import static pro.sketchware.utility.GsonUtils.getGson;
+import static bro.sketchware.utility.GsonUtils.getGson;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -34,11 +34,11 @@ import java.util.Map;
 
 import mod.hey.studios.util.Helper;
 import mod.jbk.util.LogUtil;
-import pro.sketchware.R;
-import pro.sketchware.databinding.DialogCreateNewFileLayoutBinding;
-import pro.sketchware.databinding.PreferenceActivityBinding;
-import pro.sketchware.utility.FileUtil;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.R;
+import bro.sketchware.databinding.DialogCreateNewFileLayoutBinding;
+import bro.sketchware.databinding.PreferenceActivityBinding;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.SketchwareUtil;
 
 public class ConfigActivity extends BaseAppCompatActivity {
 

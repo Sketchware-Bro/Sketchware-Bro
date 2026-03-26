@@ -23,10 +23,10 @@ import a.a.a.oB;
 import a.a.a.qA;
 import a.a.a.wq;
 import mod.hey.studios.util.Helper;
-import pro.sketchware.R;
-import pro.sketchware.databinding.FrManageFontListBinding;
-import pro.sketchware.databinding.ManageFontBinding;
-import pro.sketchware.databinding.ManageFontListItemBinding;
+import bro.sketchware.R;
+import bro.sketchware.databinding.FrManageFontListBinding;
+import bro.sketchware.databinding.ManageFontBinding;
+import bro.sketchware.databinding.ManageFontListItemBinding;
 
 public class FontManagerFragment extends qA {
 

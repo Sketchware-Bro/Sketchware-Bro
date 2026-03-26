@@ -34,17 +34,17 @@ import a.a.a.sq;
 import a.a.a.wq;
 import a.a.a.yq;
 import mod.hey.studios.util.Helper;
-import pro.sketchware.R;
-import pro.sketchware.activities.resourceseditor.components.models.ColorModel;
-import pro.sketchware.activities.resourceseditor.components.utils.ColorsEditorManager;
-import pro.sketchware.databinding.ColorPickerBinding;
-import pro.sketchware.databinding.ColorPickerCustomAttrBinding;
-import pro.sketchware.databinding.ColorPickerSimpleHexBinding;
-import pro.sketchware.databinding.ItemAttrBinding;
-import pro.sketchware.lib.validator.ColorInputValidator;
-import pro.sketchware.utility.FileUtil;
-import pro.sketchware.utility.PropertiesUtil;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.R;
+import bro.sketchware.activities.resourceseditor.components.models.ColorModel;
+import bro.sketchware.activities.resourceseditor.components.utils.ColorsEditorManager;
+import bro.sketchware.databinding.ColorPickerBinding;
+import bro.sketchware.databinding.ColorPickerCustomAttrBinding;
+import bro.sketchware.databinding.ColorPickerSimpleHexBinding;
+import bro.sketchware.databinding.ItemAttrBinding;
+import bro.sketchware.lib.validator.ColorInputValidator;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.PropertiesUtil;
+import bro.sketchware.utility.SketchwareUtil;
 
 public class ColorPickerDialog extends PopupWindow {
 

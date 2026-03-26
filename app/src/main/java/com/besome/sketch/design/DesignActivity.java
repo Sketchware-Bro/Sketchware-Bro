@@ -114,17 +114,17 @@ import mod.jbk.diagnostic.CompileErrorSaver;
 import mod.jbk.diagnostic.MissingFileException;
 import mod.jbk.util.LogUtil;
 import mod.khaled.logcat.LogReaderActivity;
-import pro.sketchware.R;
-import pro.sketchware.activities.appcompat.ManageAppCompatActivity;
-import pro.sketchware.activities.editor.command.ManageXMLCommandActivity;
-import pro.sketchware.activities.editor.view.CodeViewerActivity;
-import pro.sketchware.activities.editor.view.ViewCodeEditorActivity;
-import pro.sketchware.activities.resourceseditor.ResourcesEditorActivity;
-import pro.sketchware.dialogs.BuildSettingsBottomSheet;
-import pro.sketchware.utility.FileUtil;
-import pro.sketchware.utility.SketchwareUtil;
-import pro.sketchware.utility.ThemeUtils;
-import pro.sketchware.utility.apk.ApkSignatures;
+import bro.sketchware.R;
+import bro.sketchware.activities.appcompat.ManageAppCompatActivity;
+import bro.sketchware.activities.editor.command.ManageXMLCommandActivity;
+import bro.sketchware.activities.editor.view.CodeViewerActivity;
+import bro.sketchware.activities.editor.view.ViewCodeEditorActivity;
+import bro.sketchware.activities.resourceseditor.ResourcesEditorActivity;
+import bro.sketchware.dialogs.BuildSettingsBottomSheet;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.utility.ThemeUtils;
+import bro.sketchware.utility.apk.ApkSignatures;
 
 public class DesignActivity extends BaseAppCompatActivity implements View.OnClickListener {
     public static String sc_id;
@@ -1207,7 +1207,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
                     if (isMissingDirectory) {
                         dialog.setTitle("Missing directory detected");
                         dialog.setMessage("A directory important for building is missing. " +
-                                "Sketchware Pro can try creating " + e.getMissingFile().getAbsolutePath() +
+                                "Sketchware Bro can try creating " + e.getMissingFile().getAbsolutePath() +
                                 " if you'd like to.");
                         dialog.setNeutralButton("Create", (v, which) -> {
                             v.dismiss();

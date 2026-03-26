@@ -1,7 +1,7 @@
 package dev.aldi.sayuti.block;
 
-import static pro.sketchware.utility.ThemeUtils.getColor;
-import static pro.sketchware.utility.ThemeUtils.isDarkThemeEnabled;
+import static bro.sketchware.utility.ThemeUtils.getColor;
+import static bro.sketchware.utility.ThemeUtils.isDarkThemeEnabled;
 
 import android.util.Pair;
 
@@ -27,14 +27,14 @@ import mod.hey.studios.moreblock.ReturnMoreblockManager;
 import mod.hilal.saif.activities.tools.ConfigActivity;
 import mod.hilal.saif.blocks.BlocksHandler;
 import mod.pranav.viewbinding.ViewBindingBuilder;
-import pro.sketchware.R;
-import pro.sketchware.activities.resourceseditor.components.utils.StringsEditorManager;
-import pro.sketchware.blocks.ExtraBlocks;
-import pro.sketchware.control.logic.LogicClickListener;
-import pro.sketchware.utility.CustomVariableUtil;
-import pro.sketchware.utility.FileResConfig;
-import pro.sketchware.utility.FileUtil;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.R;
+import bro.sketchware.activities.resourceseditor.components.utils.StringsEditorManager;
+import bro.sketchware.blocks.ExtraBlocks;
+import bro.sketchware.control.logic.LogicClickListener;
+import bro.sketchware.utility.CustomVariableUtil;
+import bro.sketchware.utility.FileResConfig;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.SketchwareUtil;
 
 public class ExtraPaletteBlock {
 

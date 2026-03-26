@@ -21,8 +21,8 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import java.io.File;
 
 import a.a.a.GB;
-import pro.sketchware.R;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.R;
+import bro.sketchware.utility.SketchwareUtil;
 
 public class CollectErrorActivity extends BaseAppCompatActivity {
     @SuppressLint("SetTextI18n")
@@ -36,7 +36,7 @@ public class CollectErrorActivity extends BaseAppCompatActivity {
 
             var dialog = new MaterialAlertDialogBuilder(this)
                     .setTitle(R.string.common_error_an_error_occurred)
-                    .setMessage("An error occurred while running Sketchware Pro. " +
+                    .setMessage("An error occurred while running Sketchware Bro. " +
                             "Do you want to report this error log so that we can fix it? " +
                             "No personal information will be included.")
                     .setPositiveButton("Copy", null)
@@ -64,7 +64,7 @@ public class CollectErrorActivity extends BaseAppCompatActivity {
 
                 long fileSizeInBytes = new File(info.applicationInfo.sourceDir).length();
 
-                String deviceInfo = "Sketchware Pro " + info.versionName + " (" + info.versionCode + ")\n"
+                String deviceInfo = "Sketchware Bro " + info.versionName + " (" + info.versionCode + ")\n"
                         + "base.apk size: " + Formatter.formatFileSize(this, fileSizeInBytes) + " (" + fileSizeInBytes + " B)\n"
                         + "Locale: " + GB.g(getApplicationContext()) + "\n"
                         + "SDK version: " + Build.VERSION.SDK_INT + "\n"

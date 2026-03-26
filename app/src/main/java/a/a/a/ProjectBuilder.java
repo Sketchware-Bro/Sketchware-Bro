@@ -71,11 +71,11 @@ import mod.jbk.util.TestkeySignBridge;
 import mod.pranav.build.JarBuilder;
 import mod.pranav.build.R8Compiler;
 import mod.pranav.viewbinding.ViewBindingBuilder;
-import pro.sketchware.SketchApplication;
-import pro.sketchware.util.library.BuiltInLibraryManager;
-import pro.sketchware.utility.FilePathUtil;
-import pro.sketchware.utility.FileUtil;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.SketchApplication;
+import bro.sketchware.util.library.BuiltInLibraryManager;
+import bro.sketchware.utility.FilePathUtil;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.SketchwareUtil;
 import proguard.Configuration;
 import proguard.ConfigurationParser;
 import proguard.ParseException;
@@ -116,7 +116,7 @@ public class ProjectBuilder {
         try {
             PackageInfo info = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);
 
-            LogUtil.d(TAG, "Running Sketchware Pro " + info.versionName + " (" + info.versionCode + ")");
+            LogUtil.d(TAG, "Running Sketchware Bro " + info.versionName + " (" + info.versionCode + ")");
 
             ApplicationInfo applicationInfo = context.getPackageManager().getApplicationInfo(context.getPackageName(), 0);
 

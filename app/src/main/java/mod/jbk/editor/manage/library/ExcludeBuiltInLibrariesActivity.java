@@ -52,11 +52,11 @@ import a.a.a.MA;
 import mod.hey.studios.util.Helper;
 import mod.jbk.build.BuiltInLibraries;
 import mod.jbk.util.LogUtil;
-import pro.sketchware.R;
-import pro.sketchware.databinding.DialogSelectLibrariesBinding;
-import pro.sketchware.databinding.ManageLibraryExcludeBuiltinLibrariesBinding;
-import pro.sketchware.utility.FileUtil;
-import pro.sketchware.utility.SketchwareUtil;
+import bro.sketchware.R;
+import bro.sketchware.databinding.DialogSelectLibrariesBinding;
+import bro.sketchware.databinding.ManageLibraryExcludeBuiltinLibrariesBinding;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.SketchwareUtil;
 
 public class ExcludeBuiltInLibrariesActivity extends BaseAppCompatActivity {
     private static final String TAG = "ExcludeBuiltInLibraries";

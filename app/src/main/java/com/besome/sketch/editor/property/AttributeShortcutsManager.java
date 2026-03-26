@@ -6,7 +6,7 @@ import com.google.gson.reflect.TypeToken;
 import java.util.ArrayList;
 import java.util.List;
 
-import pro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.FileUtil;
 
 public class AttributeShortcutsManager {
     private static final String FILE_NAME = "attribute_shortcuts.json";

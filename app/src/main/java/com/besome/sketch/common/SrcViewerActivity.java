@@ -25,9 +25,9 @@ import a.a.a.bB;
 import a.a.a.jC;
 import a.a.a.yq;
 import mod.hey.studios.util.Helper;
-import pro.sketchware.R;
-import pro.sketchware.databinding.SrcViewerBinding;
-import pro.sketchware.utility.EditorUtils;
+import bro.sketchware.R;
+import bro.sketchware.databinding.SrcViewerBinding;
+import bro.sketchware.utility.EditorUtils;
 
 public class SrcViewerActivity extends BaseAppCompatActivity {
 

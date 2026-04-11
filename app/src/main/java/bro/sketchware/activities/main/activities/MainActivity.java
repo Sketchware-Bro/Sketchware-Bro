@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Environment;
 import android.provider.Settings;
 import android.util.Log;
@@ -40,11 +39,6 @@ import java.util.Objects;
 
 import a.a.a.DB;
 import a.a.a.GB;
-import mod.hey.studios.project.backup.BackupFactory;
-import mod.hey.studios.project.backup.BackupRestoreManager;
-import mod.hey.studios.util.Helper;
-import mod.hilal.saif.activities.tools.ConfigActivity;
-import mod.tyron.backup.SingleCopyTask;
 import bro.sketchware.R;
 import bro.sketchware.activities.about.AboutActivity;
 import bro.sketchware.activities.main.fragments.projects.ProjectsFragment;
@@ -55,6 +49,11 @@ import bro.sketchware.utility.DataResetter;
 import bro.sketchware.utility.FileUtil;
 import bro.sketchware.utility.SketchwareUtil;
 import bro.sketchware.utility.UI;
+import mod.hey.studios.project.backup.BackupFactory;
+import mod.hey.studios.project.backup.BackupRestoreManager;
+import mod.hey.studios.util.Helper;
+import mod.hilal.saif.activities.tools.ConfigActivity;
+import mod.tyron.backup.SingleCopyTask;
 
 public class MainActivity extends BasePermissionAppCompatActivity {
     private static final String PROJECTS_FRAGMENT_TAG = "projects_fragment";
@@ -247,25 +246,6 @@ public class MainActivity extends BasePermissionAppCompatActivity {
                     }
                 }).copyFile(data);
             }
-        } else if (!ConfigActivity.isSettingEnabled(ConfigActivity.SETTING_CRITICAL_UPDATE_REMINDER)) {
-            BottomSheetDialogView bottomSheetDialog = getBottomSheetDialogView();
-            bottomSheetDialog.getPositiveButton().setEnabled(false);
-
-            CountDownTimer countDownTimer = new CountDownTimer(10000, 1000) {
-                @Override
-                public void onTick(long millisUntilFinished) {
-                    bottomSheetDialog.setPositiveButtonText(millisUntilFinished / 1000 + "");
-                }
-
-                @Override
-                public void onFinish() {
-                    bottomSheetDialog.setPositiveButtonText("View changes");
-                    bottomSheetDialog.getPositiveButton().setEnabled(true);
-                }
-            };
-            countDownTimer.start();
-
-            if (!isFinishing()) bottomSheetDialog.show();
         }
 
         binding.bottomNav.setOnItemSelectedListener(item -> {

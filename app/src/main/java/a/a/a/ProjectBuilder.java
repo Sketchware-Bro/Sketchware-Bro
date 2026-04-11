@@ -47,6 +47,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import bro.sketchware.SketchApplication;
+import bro.sketchware.util.library.BuiltInLibraryManager;
+import bro.sketchware.utility.FilePathUtil;
+import bro.sketchware.utility.FileUtil;
+import bro.sketchware.utility.SketchwareUtil;
 import mod.agus.jcoderz.dex.Dex;
 import mod.agus.jcoderz.dex.FieldId;
 import mod.agus.jcoderz.dex.MethodId;
@@ -71,11 +76,6 @@ import mod.jbk.util.TestkeySignBridge;
 import mod.pranav.build.JarBuilder;
 import mod.pranav.build.R8Compiler;
 import mod.pranav.viewbinding.ViewBindingBuilder;
-import bro.sketchware.SketchApplication;
-import bro.sketchware.util.library.BuiltInLibraryManager;
-import bro.sketchware.utility.FilePathUtil;
-import bro.sketchware.utility.FileUtil;
-import bro.sketchware.utility.SketchwareUtil;
 import proguard.Configuration;
 import proguard.ConfigurationParser;
 import proguard.ParseException;
@@ -674,7 +674,10 @@ public class ProjectBuilder {
 
         /* Add used built-in libraries' DEX files */
         for (Jp builtInLibrary : builtInLibraryManager.getLibraries()) {
-            dexes.add(BuiltInLibraries.getLibraryDexFile(builtInLibrary.getName()));
+            File dexFile = BuiltInLibraries.getLibraryDexFile(builtInLibrary.getName());
+            if (dexFile.exists()) {
+                dexes.add(dexFile);
+            }
         }
 
         /* Add local libraries' main DEX files */

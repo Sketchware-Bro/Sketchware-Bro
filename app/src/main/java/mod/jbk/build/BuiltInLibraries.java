@@ -27,11 +27,11 @@ public class BuiltInLibraries {
      * None final so that field values won't be optimized into code, and to allow easy changing of library names due to that
      */
 
-    public static String ANDROIDX_ACTIVITY = "activity-1.12.3";
+    public static String ANDROIDX_ACTIVITY = "activity-1.13.0";
     public static String ANDROIDX_ADS_ADSERVICES = "ads-adservices-1.0.0-beta05";
     public static String ANDROIDX_ADS_ADSERVICES_JAVA = "ads-adservices-java-1.0.0-beta05";
     public static String ANDROIDX_ANNOTATION_EXPERIMENTAL = "annotation-experimental-1.4.1";
-    public static String ANDROIDX_ANNOTATION_JVM = "annotation-jvm-1.9.1";
+    public static String ANDROIDX_ANNOTATION_JVM = "annotation-jvm-1.10.0";
     public static String ANDROIDX_APPCOMPAT = "appcompat-1.7.1";
     public static String ANDROIDX_APPCOMPAT_RESOURCES = "appcompat-resources-1.7.1";
     public static String ANDROIDX_ASYNCLAYOUTINFLATER = "asynclayoutinflater-1.0.0";
@@ -86,7 +86,7 @@ public class BuiltInLibraries {
     public static String ANDROIDX_LOCALBROADCASTMANAGER = "localbroadcastmanager-1.0.0";
     public static String ANDROIDX_MEDIA = "media-1.0.0";
     public static String ANDROIDX_MULTIDEX = "multidex-2.0.1";
-    public static String ANDROIDX_NAVIGATIONEVENT_ANDROID = "navigationevent-android-1.0.2";
+    public static String ANDROIDX_NAVIGATIONEVENT_ANDROID = "navigationevent-android-1.0.0";
     public static String ANDROIDX_RECYCLERVIEW = "recyclerview-1.4.0";
     public static String ANDROIDX_ROOM_COMMON = "room-common-2.2.5";
     public static String ANDROIDX_ROOM_RUNTIME = "room-runtime-2.2.5";

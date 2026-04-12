@@ -16,8 +16,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.besome.sketch.lib.base.BaseAppCompatActivity;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 
-import mod.hey.studios.util.Helper;
 import bro.sketchware.R;
 import bro.sketchware.activities.about.fragments.BetaChangesFragment;
 import bro.sketchware.activities.about.fragments.ChangeLogFragment;
@@ -26,6 +26,7 @@ import bro.sketchware.activities.about.models.AboutAppViewModel;
 import bro.sketchware.activities.about.models.AboutResponseModel;
 import bro.sketchware.databinding.ActivityAboutAppBinding;
 import bro.sketchware.utility.Network;
+import mod.hey.studios.util.Helper;
 
 public class AboutActivity extends BaseAppCompatActivity {
 
@@ -102,10 +103,13 @@ public class AboutActivity extends BaseAppCompatActivity {
             if (response == null) return;
 
             Gson gson = new Gson();
-            AboutResponseModel aboutResponseModel = gson.fromJson(response, AboutResponseModel.class);
-            aboutAppData.setDiscordInviteLink(aboutResponseModel.getDiscordInviteLink());
-            aboutAppData.setTeamMembers(aboutResponseModel.getTeam());
-            aboutAppData.setChangelog(aboutResponseModel.getChangelog());
+            try {
+                AboutResponseModel aboutResponseModel = gson.fromJson(response, AboutResponseModel.class);
+                aboutAppData.setDiscordInviteLink(aboutResponseModel.getDiscordInviteLink());
+                aboutAppData.setTeamMembers(aboutResponseModel.getTeam());
+                aboutAppData.setChangelog(aboutResponseModel.getChangelog());
+            } catch (JsonSyntaxException ignored) {
+            }
         });
     }
 
